@@ -2,8 +2,9 @@ package ints
 
 import (
 	"fmt"
+	"os"
 )
 
 func Napoli() {
-	fmt.Println("Napoli")
+	fmt.Fprintln(os.Stdout, []any{"Napoli"}...)
 }
